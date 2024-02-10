@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url('contactbg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: inherit;
+  padding-bottom: 0;
+}
+
+
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.60);
+
+}
+
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contact .content p {
+  font-weight: 300;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container .contactInfo .box .icon {
+  min-width: 55px;
+  height: 55px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.container .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+  font-weight: bold;
+  color: #00bcd4;
+}
+
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+
+.contactForm h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 991px)
+{
+    .contact 
+    {
+      padding: 50px;
+    }
+    .container
+    {
+      flex-direction: column;
+    }
+    .container .contactInfo
+    {
+      margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm
+    {
+      width: 100%;
+    }
+}
+
+/* Footer */
+
+footer {
+  background-color: #111;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+
+.footerContainer {
+  width: 100%;
+  padding: 5px 5px 5px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 5px;
+  background-color: white;
+  margin: 15px;
+  border-radius: 50%;
+}
+
+.socialIcons a i {
+  font-size: 1.5em;
+  color: black;
+  opacity: 0.9;
+}
+
+
+/* Hover Effects */
+.socialIcons a:hover{
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.socialICons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+.footerNav {
+  margin: 10px 0;
+}
+
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footerNav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.0em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+
+.footerBottom {
+  background-color: #000;
+  padding: 10px;
+  text-align: center;
+}
+
+.footerBottom .p1 {
+  color: white;
+  padding-right: 0;
+  font-size: 1.0em;
+  font-family: Lucida Bright;
+  letter-spacing: 3px;
+}
+
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 0px 5px;
+}
